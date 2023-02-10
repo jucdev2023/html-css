@@ -1,0 +1,45 @@
+<!doctype html> 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pseudo classes / elementos </title>
+	<style>
+		a {
+			color: blueviolet;
+			text-decoration: none;
+			font-weight: bold;
+
+		}
+		a:visited {
+			color: brown;
+		}
+
+		a:hover {
+			color: black;
+			text-decoration: underline;
+		}
+		a:active {
+			color: blue ;
+		}
+		.especial::after {
+			content: '✖';
+		}
+		.especial::before {
+			content: '✖';
+		}
+		
+	</style>
+</head>
+<body>
+  <h1>personalizando links</h1>
+  <ul>
+  	<li> <a href="https://www.youtube.com/" target="_blank">Canal no youtube</a></li>
+	<li> <a href="https://pt-br.facebook.com/" target="_blank" class="especial">Meu facebook</a></li>
+	<li> <a href="https://www.twitch.tv/"> Minha twitch</a></li>
+  	
+  </ul>
+
+</body>
+</html>
