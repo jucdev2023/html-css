@@ -1,0 +1,44 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+   <body>
+    <h1>meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+
+        <!--nao existe  uma ligaçao entre o nome e a caixa-->
+        <!--action: envia os dados pra linguagem-->
+        <!--label: não se faz formulario sem relacionar o label ao seu input, porque pode dificultar os mecanismo de busca-->
+        <!--
+            
+            metodo get e post
+            o padrão é get - que coloca os dados na url
+
+            metodo post - apesar de nao mostrar os dados na url, eles ficam escondido e pode ser visto ao inspecionar elemento
+
+           metodo get: devemos usar quando os dados nao forem sensiveis/ sem ser senha, cep, senha de cartões
+
+           quando voce envia dados por get, voce so pode enviar 3000bits o que corresponde a 3000 letras
+        
+        
+        -->
+
+        <p><label for="inome">nome</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">sobrenome</label>
+            
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+        </p>
+
+
+    </form>
+   </body>
+   </html>

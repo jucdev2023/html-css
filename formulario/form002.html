@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+
+    <!--
+
+        required, um atributo que usamos dentro do input, pra caso o campo esteja limpo
+        ele não envie
+
+        minlength: atributo usado dentro do input, pra gente definir o minimo de letras que o usuario deve colocar
+
+        placeholder dentro do input: uma dica que colocamos dentro da caixa do formulario ex: placeholder ="nome de usuario"
+
+        em cada caixa, deveremos informar se é pra usuario ou senha, colocando um ''autocomplete="username/current-password e entre outros, muito util"
+
+        podemos mudar o tamanho da caixa com o '' size="10/9/5 etc.." ''
+
+
+    -->
+    <h1>teste de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+       
+        <p>
+            <label for="iusu">usuario</label>
+            <input type="text" name="usu" id="iusu" required minlength="8" maxlength="10" size="15" placeholder="nome do usuario" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="isen">senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" size="10" placeholder="minimo 8 numero" autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>
