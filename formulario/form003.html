@@ -9,11 +9,46 @@
 </head>
 <body>
     <h1>Teste formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+         <!-- atributo min: é usado pra colocar um limite em uma caixa numerica
+        
+        min="0" max="10" so pode colocar numeros sem virgulas
+
+        step="0.5" / ele vai mudando de meio em meio
+
+        input do tipo month / colocar o mes e o ano
+
+        value / ja colocar o valor pra voce, mas ele automaticamente tira o placeholder
+        -->
 
         <p>
             <label for="inome">nome</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo">
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="imedia">media</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" value="5">
+        </p>
+
+
+        <p>
+            <label for="imes">periodo letivo</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+
+
+        <p>
+         <label for="ihora">horario da prova</label>
+         <input type="time" name="hora" id="ihora">
+        </p>
+
+       
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
         </p>
     </form>
 </body>
