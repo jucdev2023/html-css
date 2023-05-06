@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+</head>
+<body>
+    
+    <h1>exemplos de formulario</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="iname">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itel">Tel:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="xxx-xxx" pattern="^[0-9]{4}-[0-9]{4}$" required>
+            
+            </p>
+        </fieldset>
+
+
+        <!--estudar mais sobre RegEx-->
+
+        <!--html5 telefone pattern-->
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="apagar">
+        </p>
+        
+
+        
+    </form>
+</body>
+</html>
