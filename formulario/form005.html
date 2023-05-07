@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+
+    <!--checkbox e radio button em html
+    
+    input do tipo : checkbox
+
+    1- problema > vc vai ter que mirar exatamente na caixinha
+    2- problema > quando voce tiver no celular, voce clica na palavra natação e ele nao marca e nem desmarca
+    isso porque a palavra tem que estar relacionada com o objeto, para relacionar, eu envelopei a palavra BASQUETE com um label e coloquei no for o id do input
+    
+    -->
+
+
+    <!--
+
+        existe um outro tipo de controle
+        input do tipo > RADIO | o qual so pode escolher uma das opçoeso 
+
+        obs: DENTRO de um mesmo GRUPO, pra eu identificar, eu vou ter que colocar o mesmo ''name'' 
+        
+        exemplo: --- <input type="radio" name="sexo" id="isxmas"> <label for="isxma">Masculino</label>
+                 --- <input type="radio" name="sexo" id="isxmas"> <label for="isxma">Masculino</label>
+
+                 todos os dois input tem o mesmo ''name'' com o nome > sexo
+
+                 ! se eu quiser que ja apareça marcado, eu coloco dentro do input > checked 
+                 ! so posso colocar checked em apenas 1
+
+
+
+        nao serve pra checkbox!!!!!!!!
+    -->
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" checked> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut"> futebol</label>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label>
+        </fieldset>
+
+       <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+       </p>
+
+    </form>
+</body>
+</html>
