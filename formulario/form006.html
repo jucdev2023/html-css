@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- componente pra gente colocar cor
+    1 - <label for="icon">cor:</label>
+   
+    elemento range >
+
+    2- <input type="range" name="" id="">
+      quando vc faz o tipo Range, voce tem que informar mais outras coisas: colocar o minimo dele e o max.
+      o value, indica por onde eu quero começar
+
+      obs!! o
+
+      pode ser que os navegadores na reconheça!
+        
+      elemento FILE
+      3-  <input type="file" name="foto" id="ifoto">
+        quando voce utilizar esse tipo de controle, voce nao pode usar o method Get, voce tem que usar o method Post
+
+-->
+
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icor">cor:</label>
+            <input type="color" name="" id="icor">
+        </p>
+        <p>
+            <label for="inivel">nivel de satisfaçao</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+        <p>
+            <label for="ifoto">foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>
