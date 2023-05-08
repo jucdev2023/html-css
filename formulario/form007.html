@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+  minhas anotações
+
+
+  elemento select: elemento no qual você clica 
+  e desce uma lista, onde precisa de um NAME E UM ID
+  e todo select tem /select e dentro dele tem um elemento chamado "OPTION"
+
+  voce pode agrupar todos os OPTION com o OPTGROUP
+  quando eu boto um OPTGROUP, eu consigo informar um label atributo
+
+  EXEMPLO:
+  <select name="estado" id="iest">
+            <option value="sp"> são paulo</option>
+            <option value="rj">Rio de janeiro</option>
+            <option value="Bra">Brasilia</option>
+
+        </select>
+
+        caso o estado nao esteja na lista, usaremos o datalist, onde colocaremos um id dentro do datalist 
+        e no input colocaremos: list="com o id do datalist dentro" caso nao esteja nas opçoes, com o datalist
+        temos a opção de digitar!
+        
+
+        Elemento >  <textarea name="" id="" cols="30" rows="10"></textarea> 
+        o textarea é ifinito, nao tem máximo de linha. quando usamos o textarea, o ideal é usar o method post
+        todo formulario que usa get ele tem limite de 3000 bytes pra poder enviar e o method post não!!! 
+
+
+-->
+
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--- escolha ---</option>
+                <optgroup label="Regiao sudeste">
+                    <option value="sp"> são paulo</option>
+                    <option value="rj">Rio de janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio grande do norte</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernabuco</option>
+                </optgroup>
+        
+            </select>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="profissão" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilidade</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+        
+            </p>
+        </p>
+        <p>
+            <label for="imsg">mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+
+</html>
